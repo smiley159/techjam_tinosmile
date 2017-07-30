@@ -6,6 +6,7 @@ library(caret)
 library(dplyr)
 library(magrittr)
 library(mice)
+library(class)
 
 training = fread("tj_05_training.csv",header = FALSE,colClasses = c("character","integer"),showProgress = TRUE) %>% unique
 names(training) <- c("card_no","gender")
